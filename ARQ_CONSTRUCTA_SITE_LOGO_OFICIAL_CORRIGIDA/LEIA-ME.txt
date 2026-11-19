@@ -1,0 +1,1 @@
+Logo do cabeçalho e rodapé: imagem original enviada pela usuária, sem redesenho. Favicon: recorte do símbolo C da mesma imagem. Envie toda esta pasta para Netlify.
