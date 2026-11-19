@@ -77,7 +77,42 @@ footer{padding:65px 0 25px}.footer-top{display:flex;justify-content:space-betwee
 @media(max-width:900px){.hero-layout{grid-template-columns:1fr;padding:80px 0 110px}.hero{min-height:unset}.art{height:330px}.tower{transform:scale(.7);animation:none}.art-ring{width:280px;height:280px}.count-layout,.manifesto{grid-template-columns:1fr;gap:40px}.cards,.roadmap{grid-template-columns:1fr}.card{min-height:unset}.cta-inner{flex-direction:column;align-items:flex-start}nav a:not(.nav-cta){display:none}}
 @media(max-width:550px){.wrap{width:calc(100% - 36px)}header{height:76px}.brand{font-size:13px;gap:9px}.brand-official{width:46px;height:46px}.brand-symbol{width:25px;height:26px}.brand-mark{width:23px;height:23px}.brand-mark:after{inset:5px}.nav-cta{padding:11px 10px;font-size:10px}h1{font-size:54px}.hero p{font-size:15px}.hero-layout{padding:70px 0 95px}.art{height:250px}.tower{scale:.68}.art-label{font-size:8px}.hero-bottom .wrap span:last-child{display:none}.section{padding:80px 0}.count-section{padding:75px 0}.timer{gap:5px}.time-cell{padding:19px 2px}.time-cell strong{font-size:32px}.time-cell span{font-size:8px}.light-section{padding:75px 0}.cta{padding:65px 0}.footer-top,.footer-bottom{flex-direction:column}.footer-bottom{margin-top:35px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tower{animation:none}.reveal{opacity:1;transform:none;transition:none}}
-</style>
+/* Logo e nome ARQ CONSTRUCTA */
+header .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header .brand .brand-official {
+  width: 48px;
+  height: 48px;
+  max-width: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+header .brand .brand-name {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #f5eee8;
+  white-space: nowrap;
+}
+
+@media (max-width: 550px) {
+  header .brand .brand-official {
+    width: 38px;
+    height: 38px;
+    max-width: 38px;
+  }
+
+  header .brand .brand-name {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+}</style>
 </head>
 <body>
 <header class="wrap"><a class="brand" href="#inicio" aria-label="ARQ CONSTRUCTA"><img class="brand-official" src="./logo%20oficial.png?v=3" alt="CONSTRUCTA"></a><nav aria-label="Menu principal"><a href="#sobre">Sobre nós</a><a href="#solucoes">Visão</a><a href="#lancamento">Lançamento</a><a class="nav-cta" href="mailto:contato@arqconstructa.com.br">Contato ↗</a></nav></header>
