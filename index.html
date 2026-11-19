@@ -9,7 +9,40 @@
 <link rel="apple-touch-icon" href="./favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
+<style>.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-official {
+  display: block;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.10em;
+  color: #f5eee8;
+  white-space: nowrap;
+}
+
+@media (max-width: 550px) {
+  .brand-official {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand-name {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+}
 :root{--bg:#171311;--panel:#211a17;--ink:#f5eee8;--muted:#b6a7a0;--terra:#c47a61;--pale:#ead9cd;--border:rgba(244,226,212,.15)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:#c47a61;color:#171311}
 .wrap{width:min(1240px,calc(100% - 64px));margin:auto}
